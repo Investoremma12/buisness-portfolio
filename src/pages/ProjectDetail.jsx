@@ -52,12 +52,14 @@ export default function ProjectDetail() {
             {/* Main */}
             <div className="lg:col-span-2">
               <RevealOnScroll>
-                <span
-                  className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full"
-                  style={{ backgroundColor: `${project.color}1A`, color: project.color }}
-                >
-                  {project.category}
-                </span>
+                {project.category && (
+                  <span
+                    className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full"
+                    style={{ backgroundColor: `${project.color}1A`, color: project.color }}
+                  >
+                    {project.category}
+                  </span>
+                )}
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mt-4 mb-3">
                   {project.title}
                 </h1>

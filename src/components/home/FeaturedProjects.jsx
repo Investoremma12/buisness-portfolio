@@ -56,12 +56,14 @@ export default function FeaturedProjects() {
 
                   {/* Info */}
                   <div className="p-6">
-                    <span
-                      className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full"
-                      style={{ backgroundColor: `${project.color}1A`, color: project.color }}
-                    >
-                      {project.category}
-                    </span>
+                    {project.category && (
+                      <span
+                        className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full"
+                        style={{ backgroundColor: `${project.color}1A`, color: project.color }}
+                      >
+                        {project.category}
+                      </span>
+                    )}
                     <h3 className="text-white font-semibold text-lg mt-3 mb-1.5 group-hover:text-[#a78bfa] transition-colors duration-300">
                       {project.title}
                     </h3>

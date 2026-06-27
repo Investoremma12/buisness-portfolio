@@ -11,7 +11,7 @@ const NAV_LINKS = [
 ];
 
 const SOCIALS = [
-	{ icon: Github, href: 'https://github.com', label: 'GitHub' },
+	{ icon: Github, href: 'https://github.com/Investoremma12/', label: 'GitHub' },
 	{ icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
 	{ icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
 ];
